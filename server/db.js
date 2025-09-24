@@ -1,9 +1,8 @@
-// db.js
-import pkg from 'pg';
-import dotenv from 'dotenv';
+const { Pool } = require('pg');
+const dotenv = require('dotenv');
 
+// Carrega as variáveis de ambiente do arquivo .env
 dotenv.config();
-const { Pool } = pkg;
 
 // Cria a conexão com o banco
 const pool = new Pool({
@@ -14,4 +13,4 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 });
 
-export default pool;
+module.exports = pool;
