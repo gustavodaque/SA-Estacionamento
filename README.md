@@ -22,3 +22,14 @@ Controlador de Autenticação
 
 O controllers/authController.js contém a lógica de negócios para a nossa rota de registro. A função registrar recebe os dados do corpo da requisição e, usando a função User.create do Sequelize, tenta criar um novo usuário no banco de dados. Em caso de sucesso, ela retorna um status 201 com a mensagem "Usuário criado com sucesso!". Se ocorrer um erro, ele é capturado e retorna um status 500 com uma mensagem de erro detalhada.
 
+Comando npm não reconhecido
+
+O erro npm não é reconhecido como um comando interno ou externo, programa operável ou arquivo em lote` indica que o sistema não consegue encontrar o executável do Node.js e do npm.
+Solução: Verifique se o Node.js está instalado corretamente no seu computador. Você pode fazer o download no site oficial: https://nodejs.org/.
+Durante a instalação, certifique-se de marcar a opção para adicionar o Node.js e o npm ao PATH do sistema.
+Se o Node.js já estiver instalado, feche e reabra o terminal ou o Visual Studio Code para que as alterações no PATH tenham efeito.
+
+Pacotes não instalados
+
+O projeto depende de pacotes como express e dotenv, que não parecem ter sido instalados. Isso causará erros de execução, pois o servidor não conseguirá encontrar as bibliotecas necessárias.
+
