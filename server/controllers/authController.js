@@ -6,7 +6,6 @@ exports.registrar = async (req, res) => {
   try {
     const { nome, email, senha, cpf, telefone } = req.body;
 
-    // Verifica se já existe usuário com mesmo email ou cpf
     const usuarioExistente = await User.buscarPorEmail(email);
     if (usuarioExistente) {
       return res.status(400).json({ erro: 'E-mail já cadastrado.' });

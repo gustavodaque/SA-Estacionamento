@@ -1,6 +1,4 @@
 const express = require('express');
-const authRoutes = require('./routes/auth');
-const dotenv = require('dotenv');
 const authController = require('../controllers/authController');
 const router = express.Router();
 

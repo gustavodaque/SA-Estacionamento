@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 
-const PORT = process.env.PORT || 5432
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
